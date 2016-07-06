@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="maya.edu.intent.SearchActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etQuery"
+        android:hint="Query...."
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etQuery"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:src="@mipmap/ic_google"
+            android:id="@+id/btnGoogle"
+            android:onClick="googleSearch"
+            android:layout_weight="1"
+            android:contentDescription="@string/google_search" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:src="@mipmap/ic_youtube"
+            android:id="@+id/btnYoutube"
+            android:onClick="youtubeSearch"
+            android:layout_weight="1"
+            android:contentDescription="@string/youtube_search" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:src="@mipmap/ic_adroind"
+            android:id="@+id/btnAndroid"
+            android:onClick="androidSearch"
+            android:layout_weight="1"
+            android:contentDescription="@string/android_dev_search" />
+    </LinearLayout>
+</RelativeLayout>

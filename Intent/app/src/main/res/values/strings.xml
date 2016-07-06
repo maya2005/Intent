@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="google_search">google search</string>
+    <string name="youtube_search">youtube search</string>
+    <string name="android_dev_search">android dev search</string>
+    <string name="edQuery_error">Enter a query..</string>
+    <string name="btnSearch">search</string>
+    <string name="alarm_clock_button">alarm clock button</string>
+    <string name="picke_hour">בחר שעה</string>
+    <string name="picke_date_calender">בחר תאריך</string>
+</resources>
